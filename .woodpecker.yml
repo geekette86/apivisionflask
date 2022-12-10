@@ -1,0 +1,10 @@
+clone:
+  git:
+    image: plugins/git
+    depth: 1
+
+pipeline:
+  build:
+    image: devforth/drone-builder
+    commands:
+      - echo "test"
